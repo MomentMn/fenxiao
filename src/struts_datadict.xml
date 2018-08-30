@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	
+	<package name="dataDict" extends="struts-default" namespace="/datadict">
+		<action name="listExpress" class="dataDictAction" method="listExpress">
+    	</action>
+		<action name="listArea" class="dataDictAction" method="listArea">
+		</action>
+		<action name="list" class="dataDictAction" method="list">
+		</action>
+
+	</package>
+</struts>  

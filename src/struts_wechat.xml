@@ -1,0 +1,40 @@
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="wechatAction" extends="struts-default" namespace="/">
+    	<action name="weixin" class="wechatAction" method="token">
+    	</action>
+	</package>
+	
+	<package name="wechatMessageAction" extends="struts-default" namespace="/">
+
+    	<action name="code" class="wechatMessageAction" method="getCode"></action>
+    	<action name="message" class="wechatMessageAction" method="getMessage">
+    		<result name="success">list.jsp</result>
+    	</action>
+		<action name="jump" class="wechatMessageAction" method="jump"></action>
+		<action name="wxJump" class="wechatMessageAction" method="wxJump">
+		</action>
+    	<action name="wechat" class="wechatMessageAction" method="getWeChatUserInfo"></action>
+    	
+    	<action name="qrcode" class="wechatMessageAction" method="createQrCode"></action>
+    	
+    	<action name="test" class="wechatMessageAction" method="testAction">
+    		<result name="success">list.jsp</result>
+    	</action>
+	</package>
+	
+	<!-- 支付页面 -->
+	<package name="weChatPayAction" extends="struts-default" namespace="/user">
+    	<action name="unifiedOrder" class="weChatPayAction" method="unifiedOrder">
+    		<result name="success">/user/weChatPay.jsp</result>
+    	</action>
+    	<action name="paySuccess" class="weChatPayAction" method="paySuccess">
+    		<result name="success">/user/paySuccess.jsp</result>
+    	</action>
+    	<action name="noticSuccess" class="weChatPayAction" method="noticSuccess">
+    	</action>
+	</package>
+</struts>  

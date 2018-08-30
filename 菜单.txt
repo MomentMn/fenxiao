@@ -1,0 +1,21 @@
+{
+     "button":[
+     {    
+        "type":"view",
+	   "name":"智泉商城",
+	   "url":"http://fenxiao.ceshi.xingaokaowang.cn/code"
+      },
+	  {    
+       "type":"view",
+	   "name":"我的二维码",
+	   "url":"http://fenxiao.ceshi.xingaokaowang.cn/jump?url=http://fenxiao.ceshi.xingaokaowang.cn/user/promote.jsp"
+      },
+	   {    
+       "type":"view",
+	   "name":"佣金明细",
+	    "url":"http://fenxiao.ceshi.xingaokaowang.cn/jump?url=http://fenxiao.ceshi.xingaokaowang.cn/user/commissionList.jsp"
+	   
+      }
+      ]
+ }
+ 

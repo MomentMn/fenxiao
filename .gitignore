@@ -1,0 +1,12 @@
+
+WebContent/WEB-INF/classes/
+
+*.ftl
+
+*.bak
+
+\.idea/
+
+*.iml
+
+out/
